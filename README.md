@@ -1,90 +1,256 @@
-# 𝐂𝐚𝐧𝐜𝐞𝐫-𝐑𝐢𝐬𝐤-𝐅𝐚𝐜𝐭𝐨𝐫𝐬-𝐄𝐃𝐀-𝐌𝐋
-*A compact and standardized dataset examining how lifestyle, environmental, and genetic factors influence five common cancer types.*
-*Contains 2,000 individual records × 21 features, fully numerical and ready for EDA, dashboarding, and multiclass ML tasks.*
+# 🧬 Cancer Risk Factors: Exploratory Data Analysis & Machine Learning
 
+> A comprehensive Data Science project analyzing how **lifestyle, environmental, and genetic factors** influence the risk of five common cancer types using **Exploratory Data Analysis (EDA)** and **Machine Learning**.
 
-# Why This Dataset?
-
-*Explore risk distributions and correlations across lifestyle factors
-Build visual dashboards for population-level cancer risk
-Train multiclass models on Cancer_Type with balanced evaluation (macro-F1, accuracy)
-Practice class imbalance handling and interpretability*
-
-
-# Targets
-
-**Primary target:**
-*Cancer_Type ∈ {Lung, Breast, Colon, Prostate, Skin}
-→ Ideal for multiclass classification (use macro-F1, accuracy, confusion matrix).*
-
-**Optional target:**
-
-*Risk_Level ∈ {Low, Medium, High}
-→ Derived from Overall_Risk_Score thresholds:
-Low < 0.35 | 0.35–0.65 = Medium | > 0.65 = High*
-
-
-# 🔍 Analysis Pipeline
-
-**Categorical Features:** 
-
-*Analyzed variables like Cancer_Type, Risk_Level, Gender, H_Pylori_Infection, and BRCA_Mutation using bar charts.*
-
-*Most patients fall into Medium or High risk groups.*
-
-*H_Pylori_Infection and BRCA_Mutation strongly link to specific cancer types.*
-
-**Chi-Square Test:** 
-
-*Confirmed strong associations (p < 0.05) between Cancer_Type,*
-
-*H_Pylori_Infection, and BRCA_Mutation with overall risk level.*
-
-**Numerical Features:** 
-
-*Variables: Age, BMI, Smoking, Alcohol_Use, Air_Pollution, Physical_Activity, etc.*
-
-*High-risk patients → higher BMI, Smoking, and Air Pollution.*
-
-*Low-risk patients → better Physical Activity and Diet Quality.*
-
-**Correlation & Feature Importance:**
-
- *Top correlated features with overall risk:*
-
- *1️⃣ Smoking 2️⃣ Air Pollution 3️⃣ BMI 4️⃣ Age*
-
-**Data Preparation:**
-
- *✅ Dropped non-predictive IDs*
-
- *✅ One-hot encoded categorical variables*
-
- *✅ Train-test split (80/20)*
-
-**🤖 Machine Learning Models**
-
-*Random Forest Classifier:*
-
-*Accuracy: 96%*
-
-*Top Predictors: Overall_Risk_Score, Smoking, Air_Pollution, BMI, Age*
-
-*Logistic Regression:*
-
-*Accuracy: 85%*
-
-*✅ Random Forest outperformed across all metrics (F1 ≈ 0.95).*
-
-
-# 📊 Key Insights
-
-*Environmental and lifestyle factors dominate cancer risk.*
-
-*Smoking, Air Pollution, and Obesity are top contributors.*
-
-*Exercise and Healthy Diet act as strong protective factors.*
-
-
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?logo=numpy)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?logo=scikit-learn)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-4C72B0)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
+
+# 📌 Project Overview
+
+This project investigates how **lifestyle habits**, **environmental exposure**, and **genetic factors** contribute to cancer risk. The dataset contains **2,000 patient records** with **21 numerical features**, making it ideal for:
+
+- 📊 Exploratory Data Analysis (EDA)
+- 📈 Interactive Dashboard Development
+- 🤖 Machine Learning
+- 📉 Feature Importance Analysis
+- 📋 Statistical Hypothesis Testing
+
+---
+
+# 📂 Dataset Information
+
+| Feature | Details |
+|----------|---------|
+| Records | 2,000 |
+| Features | 21 |
+| Dataset Type | Structured |
+| Missing Values | None |
+| Target Variable | Cancer_Type |
+| ML Task | Multiclass Classification |
+
+---
+
+# 🎯 Project Objectives
+
+This project aims to:
+
+- Analyze the distribution of cancer risk factors.
+- Discover relationships between lifestyle and cancer occurrence.
+- Build meaningful visualizations for data exploration.
+- Train multiclass classification models.
+- Compare model performance using standard evaluation metrics.
+- Identify the most influential cancer risk factors.
+
+---
+
+# 🎯 Target Variables
+
+## Primary Target
+
+**Cancer_Type**
+
+- Lung Cancer
+- Breast Cancer
+- Colon Cancer
+- Prostate Cancer
+- Skin Cancer
+
+Recommended evaluation metrics:
+
+- Accuracy
+- Precision
+- Recall
+- Macro F1-Score
+- Confusion Matrix
+
+---
+
+## Optional Target
+
+**Risk_Level**
+
+Derived from **Overall_Risk_Score**:
+
+| Risk Score | Category |
+|------------|----------|
+| < 0.35 | Low |
+| 0.35 – 0.65 | Medium |
+| > 0.65 | High |
+
+---
+
+# 🔍 Exploratory Data Analysis (EDA)
+
+## Categorical Analysis
+
+The following categorical variables were analyzed:
+
+- Cancer Type
+- Risk Level
+- Gender
+- H. Pylori Infection
+- BRCA Mutation
+
+### Key Findings
+
+- Most patients belong to the **Medium** and **High** risk groups.
+- BRCA mutations show a strong association with specific cancer types.
+- H. Pylori infection appears more frequently in selected cancer categories.
+
+---
+
+## Statistical Analysis
+
+### Chi-Square Test
+
+Statistical hypothesis testing confirmed significant relationships between:
+
+- Cancer Type
+- H. Pylori Infection
+- BRCA Mutation
+
+All significant associations achieved:
+
+**p-value < 0.05**
+
+---
+
+## Numerical Feature Analysis
+
+Analyzed numerical variables include:
+
+- Age
+- BMI
+- Smoking
+- Alcohol Use
+- Air Pollution
+- Physical Activity
+- Diet Quality
+- Overall Risk Score
+
+### Observations
+
+High-risk individuals generally exhibit:
+
+- Higher BMI
+- Higher Smoking Scores
+- Greater Air Pollution Exposure
+- Older Age
+
+Lower-risk individuals generally demonstrate:
+
+- Better Physical Activity
+- Healthier Diet Quality
+
+---
+
+# 📈 Correlation Analysis
+
+The strongest predictors of cancer risk were:
+
+1. 🚬 Smoking
+2. 🌫 Air Pollution
+3. ⚖ BMI
+4. 👤 Age
+
+These variables showed the highest correlation with **Overall Risk Score**.
+
+---
+
+# ⚙ Data Preparation
+
+The dataset was prepared using the following preprocessing pipeline:
+
+- ✅ Removed non-predictive ID columns
+- ✅ Encoded categorical variables
+- ✅ Feature scaling (where applicable)
+- ✅ Train-Test Split (80:20)
+- ✅ Model-ready dataset creation
+
+---
+
+# 🤖 Machine Learning Models
+
+## Random Forest Classifier
+
+**Accuracy:** **96%**
+
+Top Important Features
+
+- Overall Risk Score
+- Smoking
+- Air Pollution
+- BMI
+- Age
+
+---
+
+## Logistic Regression
+
+**Accuracy:** **85%**
+
+---
+
+# 📊 Model Comparison
+
+| Model | Accuracy |
+|--------|----------|
+| Random Forest | **96%** |
+| Logistic Regression | **85%** |
+
+✅ **Random Forest achieved the best overall performance with an approximate Macro F1-Score of 0.95.**
+
+---
+
+# 💡 Key Insights
+
+- Environmental and lifestyle factors have a significant impact on cancer risk.
+- Smoking is the strongest predictor among all variables.
+- Air pollution substantially increases cancer risk.
+- Higher BMI is associated with increased overall cancer risk.
+- Regular physical activity and a healthy diet appear to reduce cancer risk.
+- Genetic mutations such as BRCA also contribute to elevated risk for specific cancer types.
+
+---
+
+# 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Jupyter Notebook
+
+---
+
+# 🚀 Future Improvements
+
+- Hyperparameter tuning
+- XGBoost and LightGBM implementation
+- SHAP explainability
+- Cross-validation
+- Interactive Power BI Dashboard
+- Model deployment using Streamlit or Flask
+
+---
+
+# 👨‍💻 Author
+
+**Arpan Ghosal**
+
+**Junior Data Scientist**
+
+Passionate about transforming data into actionable insights through Machine Learning, Data Analytics, and Artificial Intelligence.
+
+---
+
+⭐ **If you found this project useful, consider giving it a Star!**
