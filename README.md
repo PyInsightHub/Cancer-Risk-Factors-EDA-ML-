@@ -1,4 +1,4 @@
-![image alt][(https://github.com/PyInsightHub/Cancer-Risk-Factors-EDA-ML-/blob/fa0373e14bab8fc68671b22ed7f33b0ea2388764/CANCER%20RISK%20FACTOR.png)]
+![image alt](https://github.com/PyInsightHub/Cancer-Risk-Factors-EDA-ML-/blob/fa0373e14bab8fc68671b22ed7f33b0ea2388764/CANCER%20RISK%20FACTOR.png)
 
 > 𝙰 𝚌𝚘𝚖𝚙𝚛𝚎𝚑𝚎𝚗𝚜𝚒𝚟𝚎 𝙳𝚊𝚝𝚊 𝚂𝚌𝚒𝚎𝚗𝚌𝚎 𝚙𝚛𝚘𝚓𝚎𝚌𝚝 𝚊𝚗𝚊𝚕𝚢𝚣𝚒𝚗𝚐 𝚑𝚘𝚠 **𝚕𝚒𝚏𝚎𝚜𝚝𝚢𝚕𝚎, 𝚎𝚗𝚟𝚒𝚛𝚘𝚗𝚖𝚎𝚗𝚝𝚊𝚕, 𝚊𝚗𝚍 𝚐𝚎𝚗𝚎𝚝𝚒𝚌 𝚏𝚊𝚌𝚝𝚘𝚛𝚜** 𝚒𝚗𝚏𝚕𝚞𝚎𝚗𝚌𝚎 𝚝𝚑𝚎 𝚛𝚒𝚜𝚔 𝚘𝚏 𝚏𝚒𝚟𝚎 𝚌𝚘𝚖𝚖𝚘𝚗 𝚌𝚊𝚗𝚌𝚎𝚛 𝚝𝚢𝚙𝚎𝚜 𝚞𝚜𝚒𝚗𝚐 **𝙴𝚡𝚙𝚕𝚘𝚛𝚊𝚝𝚘𝚛𝚢 𝙳𝚊𝚝𝚊 𝙰𝚗𝚊𝚕𝚢𝚜𝚒𝚜 (𝙴𝙳𝙰)** 𝚊𝚗𝚍 **𝙼𝚊𝚌𝚑𝚒𝚗𝚎 𝙻𝚎𝚊𝚛𝚗𝚒𝚗𝚐**.
 
